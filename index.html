@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Khaja Eshaq | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="apple-touch-icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <style type="text/tailwindcss">
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Custom Colors */
+    :root {
+      --background: 240 10% 99%;
+      --foreground: 222 47% 11%;
+      --card: 0 0% 100%;
+      --card-foreground: 222 47% 11%;
+      --primary: 188 84% 48%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 35 92% 55%;
+      --secondary-foreground: 222 47% 11%;
+    }
+
+    .dark {
+      --background: 222 47% 11%;
+      --foreground: 215 20% 65%;
+      --card: 222 47% 14%;
+      --card-foreground: 215 20% 65%;
+      --primary: 188 78% 58%;
+      --primary-foreground: 222 47% 11%;
+      --secondary: 35 85% 65%;
+      --secondary-foreground: 222 47% 11%;
+    }
+
+    .bg-background {
+      background-color: hsl(var(--background));
+    }
+
+    .text-foreground {
+      color: hsl(var(--foreground));
+    }
+
+    .bg-card {
+      background-color: hsl(var(--card));
+    }
+
+    .text-card-foreground {
+      color: hsl(var(--card-foreground));
+    }
+
+    .bg-primary {
+      background-color: hsl(var(--primary));
+    }
+
+    .text-primary {
+      color: hsl(var(--primary));
+    }
+
+    .text-primary-foreground {
+      color: hsl(var(--primary-foreground));
+    }
+
+    .bg-secondary {
+      background-color: hsl(var(--secondary));
+    }
+
+    .text-secondary {
+      color: hsl(var(--secondary));
+    }
+
+    .text-secondary-foreground {
+      color: hsl(var(--secondary-foreground));
+    }
+
+    /* Scroll reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .nav-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: hsl(var(--primary));
+      transition: width .3s;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+
+  <!-- Tailwind Script Config for Custom Animations -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          keyframes: {
+            shimmer: {
+              '100%': { transform: 'translateX(100%)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-background text-foreground transition-colors duration-500">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
+
+
