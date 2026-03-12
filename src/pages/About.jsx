@@ -15,7 +15,7 @@ const sections = [
 const education = [
   {
     label: 'Schooling',
-    place: 'Siva Sivani Public School, Steel Plant, Visakhapatnam',
+    place: 'Siva Sivani Public School, Ukkunagaram, Visakhapatnam',
     desc: 'Built a strong foundation in mathematics, science and logical reasoning.',
   },
   {
@@ -26,7 +26,7 @@ const education = [
   {
     label: 'B.Tech CSE',
     place: 'Vignan Institute of Technology, Visakhapatnam',
-    desc: 'Currently pursuing B.Tech in CSE with 1st Sem SGPA 9.03 and 2nd Sem SGPA 9.80, actively involved in coding, projects and technical events.',
+    desc: 'Currently pursuing B.Tech in CSE with 1st Sem SGPA 9.03 and 2nd Sem SGPA 9.80 and 3rd sem 9.4, actively involved in coding, projects and technical events.',
   },
 ];
 
@@ -36,9 +36,12 @@ const skills = [
   'JavaScript',
   'HTML',
   'CSS',
-  'React',
-  'Git & GitHub',
-  'VS Code / Cursor',
+  'Git and Git hub',
+  'Deployement Through vercel,render etc',
+  'Data cleaning and pre processing using pandas',
+  'Data Visualization using Matplotlib and Seaborn',
+  'Machine Learning Using Scikit-learn',
+  'Ai tools Like Antigravity,Cursor and Claude'
 ];
 
 const achievements = [

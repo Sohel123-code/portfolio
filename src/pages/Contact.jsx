@@ -24,8 +24,8 @@ function Contact() {
         {/* Phone */}
         <div className="flex items-center gap-4 bg-card p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
           <img src={callImg} alt="Phone" className="w-8 h-8" />
-          <a href="tel:6309145886" className="text-primary font-medium hover:underline break-all">
-            +91 6309145886
+          <a href="tel:7396987687" className="text-primary font-medium hover:underline break-all">
+            +91 7396987687
           </a>
         </div>
       </div>

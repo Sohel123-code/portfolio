@@ -48,8 +48,8 @@ function Projects() {
       link: "https://taupe-pika-c20a6b.netlify.app/",
     },
     {
-      title: "GUESSING GAME",
-      desc: "An engaging game where users guess a randomly generated number.",
+      title: "Temperature Convertor",
+      desc: "Converts Temperature from Celsius to Fahrenheit and vice versa.",
       img: guessImg,
       link: "https://steady-kataifi-8ee5bf.netlify.app/",
     }
